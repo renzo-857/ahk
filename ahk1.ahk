@@ -8,7 +8,7 @@ SendMode, Event
 SetWorkingDir %A_ScriptDir%
 SetKeyDelay, -1, -1
 ListLines, Off
-SetBatchLines, 1000ms
+SetBatchLines, -1
 Process, Priority, , High
 
 CapsLock::Send {Esc}
