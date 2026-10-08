@@ -10,7 +10,9 @@ SetKeyDelay, -1, -1
 ListLines, Off
 SetBatchLines, 1000ms
 Process, Priority, , High
+
 CapsLock::Send {Esc}
+
 +CapsLock::
     SetCapsLockState, % GetKeyState("CapsLock", "T") ? "Off" : "On"
 return
