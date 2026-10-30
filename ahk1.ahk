@@ -11,8 +11,5 @@ ListLines, Off
 SetBatchLines, -1
 Process, Priority, , High
 
-CapsLock::Send {Esc}
-
-+CapsLock::
-    SetCapsLockState, % GetKeyState("CapsLock", "T") ? "Off" : "On"
-return
+^#PgUp::SoundSet, +5
+^#PgDn::SoundSet, -5
